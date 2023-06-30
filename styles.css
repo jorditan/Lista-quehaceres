@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: #92b1d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 30px;
+    background: #92b1d3;
+    border-radius: 50px;
+    box-shadow:  29px 29px 76px #5b6e83,
+    -29px -29px 76px #c9f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenedor h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.textoDegradado {
+    background: linear-gradient(to right, #5248a3, #6683db, #222f59 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.buscador {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    padding: 20px;
+}
+
+input {
+    width: 440px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all ease 1s
+}
+
+input:hover {
+    transform: translatey(-3px);
+}
+
+.btn-add {
+    margin-left: 10px;
+}
+
+
+
+button {
+    background: none;
+    border: none;
+}
+
+i {
+    font-size: 20px;
+    transition: all ease 1s;
+}
+
+i:hover {
+    transform: translateY(-3px);
+}
+
+.vacio {
+    color: #ffff;
+}
+
+.contenedorTareasNuevas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width:  100%;
+}
+
+li {
+    background-color: #f1f4f7;
+    width: auto;
+    border-radius:  10px;
+    display: flex;
+    margin: 8px;
+    height: auto;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;  
+    transition: all ease 1s;
+}
+
+li p {
+    margin-left: 20px;
+}
+
+li:hover {
+    background-color: #d9dcdf;
+}
+
+
+button {
+    font-size: 20px;
+    color: #222f59;
+    transition: 1s all ease;
+}
+
+button:hover {
+    color:red;
+}
+
+@media screen and (max-width: 934px) {
+    .contenedor {
+        height: auto;
+        width: 70%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+
